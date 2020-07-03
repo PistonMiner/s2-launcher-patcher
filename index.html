@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link href="main.css" rel="stylesheet">
+	<title>Source 2 Launcher Patcher</title>
+</head>
+<body>
+<div id="outer">
+<div id="patch">
+	<h1>Source 2 Launcher Patcher</h1>
+	<form id="patch_form" onsubmit="patchSubmit(); return false;">
+		<label for="original_file">Original launcher (e.g. hlvr.exe)</label><br>
+		<input type="file" id="original_file" name="original_file" accept=".exe"><br><br>
+
+		<label for="module_name">Module to load (max 7 characters)</label><br>
+		<input type="text" id="module_name" name="module_name" value="mod" pattern=".{1,7}"><br><br>
+
+		<input type="submit" value="Patch">
+	</form><br>
+	<div id="error_text"></div>
+</div>
+</div>
+<script src="./main.js"></script>
+</body>
+</html>

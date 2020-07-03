@@ -1,0 +1,32 @@
+body
+{
+	font-family: monospace;
+}
+
+#patch
+{
+	text-align: center;
+	font-size: 2em;
+}
+
+input
+{
+	font: inherit;
+	font-size: 0.8em;
+}
+
+#error_text
+{
+	visibility: collapse;
+	font-weight: bold;
+}
+#error_text.fail
+{
+	visibility: visible;
+	color: #ff0033;
+}
+#error_text.success
+{
+	visibility: visible;
+	color: #00ff33;
+}
